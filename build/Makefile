@@ -116,78 +116,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main_project
+# Target rules for targets named learning_cmake
 
 # Build rule for target.
-main_project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main_project
-.PHONY : main_project
+learning_cmake: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 learning_cmake
+.PHONY : learning_cmake
 
 # fast build rule for target.
-main_project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main_project.dir\build.make CMakeFiles/main_project.dir/build
-.PHONY : main_project/fast
-
-#=============================================================================
-# Target rules for targets named LIBRARY_NAME
-
-# Build rule for target.
-LIBRARY_NAME: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LIBRARY_NAME
-.PHONY : LIBRARY_NAME
-
-# fast build rule for target.
-LIBRARY_NAME/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIBRARY_NAME.dir\build.make CMakeFiles/LIBRARY_NAME.dir/build
-.PHONY : LIBRARY_NAME/fast
-
-main.obj: main.cpp.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main_project.dir\build.make CMakeFiles/main_project.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main_project.dir\build.make CMakeFiles/main_project.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main_project.dir\build.make CMakeFiles/main_project.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-second.obj: second.cpp.obj
-.PHONY : second.obj
-
-# target to build an object file
-second.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIBRARY_NAME.dir\build.make CMakeFiles/LIBRARY_NAME.dir/second.cpp.obj
-.PHONY : second.cpp.obj
-
-second.i: second.cpp.i
-.PHONY : second.i
-
-# target to preprocess a source file
-second.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIBRARY_NAME.dir\build.make CMakeFiles/LIBRARY_NAME.dir/second.cpp.i
-.PHONY : second.cpp.i
-
-second.s: second.cpp.s
-.PHONY : second.s
-
-# target to generate assembly for a file
-second.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIBRARY_NAME.dir\build.make CMakeFiles/LIBRARY_NAME.dir/second.cpp.s
-.PHONY : second.cpp.s
+learning_cmake/fast:
+	$(MAKE) $(MAKESILENT) -f app\CMakeFiles\learning_cmake.dir\build.make app/CMakeFiles/learning_cmake.dir/build
+.PHONY : learning_cmake/fast
 
 # Help Target
 help:
@@ -197,14 +136,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... LIBRARY_NAME
-	@echo ... main_project
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... second.obj
-	@echo ... second.i
-	@echo ... second.s
+	@echo ... learning_cmake
 .PHONY : help
 
 

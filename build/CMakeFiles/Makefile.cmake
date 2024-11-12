@@ -30,6 +30,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake"
   "C:/programming/cmake_book/CMakeLists.txt"
+  "C:/programming/cmake_book/app/CMakeLists.txt"
   "CMakeFiles/3.30.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.1/CMakeRCCompiler.cmake"
@@ -45,10 +46,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "app/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/main_project.dir/DependInfo.cmake"
-  "CMakeFiles/LIBRARY_NAME.dir/DependInfo.cmake"
+  "app/CMakeFiles/learning_cmake.dir/DependInfo.cmake"
   )

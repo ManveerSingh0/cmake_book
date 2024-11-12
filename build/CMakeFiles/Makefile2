@@ -62,70 +62,57 @@ CMAKE_BINARY_DIR = C:\programming\cmake_book\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main_project.dir/all
-all: CMakeFiles/LIBRARY_NAME.dir/all
+all: app/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: app/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main_project.dir/clean
-clean: CMakeFiles/LIBRARY_NAME.dir/clean
+clean: app/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main_project.dir
+# Directory level rules for directory app
 
-# All Build rule for target.
-CMakeFiles/main_project.dir/all: CMakeFiles/LIBRARY_NAME.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main_project.dir\build.make CMakeFiles/main_project.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main_project.dir\build.make CMakeFiles/main_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\programming\cmake_book\build\CMakeFiles --progress-num=3,4 "Built target main_project"
-.PHONY : CMakeFiles/main_project.dir/all
+# Recursive "all" directory target.
+app/all: app/CMakeFiles/learning_cmake.dir/all
+.PHONY : app/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/main_project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\cmake_book\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/main_project.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\cmake_book\build\CMakeFiles 0
-.PHONY : CMakeFiles/main_project.dir/rule
+# Recursive "preinstall" directory target.
+app/preinstall:
+.PHONY : app/preinstall
 
-# Convenience name for target.
-main_project: CMakeFiles/main_project.dir/rule
-.PHONY : main_project
-
-# clean rule for target.
-CMakeFiles/main_project.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main_project.dir\build.make CMakeFiles/main_project.dir/clean
-.PHONY : CMakeFiles/main_project.dir/clean
+# Recursive "clean" directory target.
+app/clean: app/CMakeFiles/learning_cmake.dir/clean
+.PHONY : app/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LIBRARY_NAME.dir
+# Target rules for target app/CMakeFiles/learning_cmake.dir
 
 # All Build rule for target.
-CMakeFiles/LIBRARY_NAME.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIBRARY_NAME.dir\build.make CMakeFiles/LIBRARY_NAME.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIBRARY_NAME.dir\build.make CMakeFiles/LIBRARY_NAME.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\programming\cmake_book\build\CMakeFiles --progress-num=1,2 "Built target LIBRARY_NAME"
-.PHONY : CMakeFiles/LIBRARY_NAME.dir/all
+app/CMakeFiles/learning_cmake.dir/all:
+	$(MAKE) $(MAKESILENT) -f app\CMakeFiles\learning_cmake.dir\build.make app/CMakeFiles/learning_cmake.dir/depend
+	$(MAKE) $(MAKESILENT) -f app\CMakeFiles\learning_cmake.dir\build.make app/CMakeFiles/learning_cmake.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\programming\cmake_book\build\CMakeFiles --progress-num=1,2 "Built target learning_cmake"
+.PHONY : app/CMakeFiles/learning_cmake.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LIBRARY_NAME.dir/rule: cmake_check_build_system
+app/CMakeFiles/learning_cmake.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\cmake_book\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LIBRARY_NAME.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app/CMakeFiles/learning_cmake.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\cmake_book\build\CMakeFiles 0
-.PHONY : CMakeFiles/LIBRARY_NAME.dir/rule
+.PHONY : app/CMakeFiles/learning_cmake.dir/rule
 
 # Convenience name for target.
-LIBRARY_NAME: CMakeFiles/LIBRARY_NAME.dir/rule
-.PHONY : LIBRARY_NAME
+learning_cmake: app/CMakeFiles/learning_cmake.dir/rule
+.PHONY : learning_cmake
 
 # clean rule for target.
-CMakeFiles/LIBRARY_NAME.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIBRARY_NAME.dir\build.make CMakeFiles/LIBRARY_NAME.dir/clean
-.PHONY : CMakeFiles/LIBRARY_NAME.dir/clean
+app/CMakeFiles/learning_cmake.dir/clean:
+	$(MAKE) $(MAKESILENT) -f app\CMakeFiles\learning_cmake.dir\build.make app/CMakeFiles/learning_cmake.dir/clean
+.PHONY : app/CMakeFiles/learning_cmake.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

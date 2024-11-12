@@ -16,10 +16,8 @@ project(
 )
 
 
-add_executable(main_project main.cpp)
+add_subdirectory(app)
 
-add_library(LIBRARY_NAME  second.cpp)
-target_link_libraries(main_project LIBRARY_NAME)
 
 
 #-------------------------------Variables-------------------------

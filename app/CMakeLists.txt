@@ -1,0 +1,1 @@
+add_executable(learning_cmake main.cpp)
