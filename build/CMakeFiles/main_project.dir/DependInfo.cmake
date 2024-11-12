@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/genki/programming/learning_cmake/cmake_book/main.cpp" "CMakeFiles/main_project.dir/main.cpp.o" "gcc" "CMakeFiles/main_project.dir/main.cpp.o.d"
-  "" "main_project" "gcc" "CMakeFiles/main_project.dir/link.d"
+  "C:/programming/cmake_book/main.cpp" "CMakeFiles/main_project.dir/main.cpp.obj" "gcc" "CMakeFiles/main_project.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

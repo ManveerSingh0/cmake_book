@@ -1,4 +1,4 @@
-/home/genki/programming/learning_cmake/cmake_book/build/CMakeFiles/main_project.dir
-/home/genki/programming/learning_cmake/cmake_book/build/CMakeFiles/LIBRARY_NAME.dir
-/home/genki/programming/learning_cmake/cmake_book/build/CMakeFiles/edit_cache.dir
-/home/genki/programming/learning_cmake/cmake_book/build/CMakeFiles/rebuild_cache.dir
+C:/programming/cmake_book/build/CMakeFiles/main_project.dir
+C:/programming/cmake_book/build/CMakeFiles/LIBRARY_NAME.dir
+C:/programming/cmake_book/build/CMakeFiles/edit_cache.dir
+C:/programming/cmake_book/build/CMakeFiles/rebuild_cache.dir

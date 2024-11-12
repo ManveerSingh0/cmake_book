@@ -90,3 +90,10 @@ set(another_list another apple from me)
 foreach(loop_var IN LISTS my_list another_list ITEMS)
   message("Iteration for: ${loop_var}")
 endforeach()
+
+set(first_list x y)
+set(second_list first second)
+
+foreach(var IN ZIP_LISTS first_list second_list )
+  message("first one ${var_0} , second_one ${var_1}")
+endforeach()
