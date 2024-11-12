@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLIBRARY_NAME.a CMakeFiles/LIBRARY_NAME.dir/second.cpp.o
+/usr/bin/ranlib libLIBRARY_NAME.a
