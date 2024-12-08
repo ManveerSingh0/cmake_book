@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc libLIBRARY_NAME.a CMakeFiles/LIBRARY_NAME.dir/second.cpp.obj
-C:\mingw64\bin\ranlib.exe libLIBRARY_NAME.a

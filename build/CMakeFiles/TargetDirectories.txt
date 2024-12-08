@@ -1,5 +1,5 @@
-C:/programming/cmake_book/build/CMakeFiles/edit_cache.dir
-C:/programming/cmake_book/build/CMakeFiles/rebuild_cache.dir
-C:/programming/cmake_book/build/app/CMakeFiles/learning_cmake.dir
-C:/programming/cmake_book/build/app/CMakeFiles/edit_cache.dir
-C:/programming/cmake_book/build/app/CMakeFiles/rebuild_cache.dir
+/home/genki/programming/learning_cmake/cmake_book/build/CMakeFiles/edit_cache.dir
+/home/genki/programming/learning_cmake/cmake_book/build/CMakeFiles/rebuild_cache.dir
+/home/genki/programming/learning_cmake/cmake_book/build/app/CMakeFiles/learning_cmake.dir
+/home/genki/programming/learning_cmake/cmake_book/build/app/CMakeFiles/edit_cache.dir
+/home/genki/programming/learning_cmake/cmake_book/build/app/CMakeFiles/rebuild_cache.dir
