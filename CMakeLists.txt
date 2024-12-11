@@ -14,10 +14,13 @@ project(
   HOMEPAGE_URL https://www.google.com
   LANGUAGES C CXX
 )
-
-
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 add_subdirectory(app)
 
+target_compile_features(learning_cmake PRIVATE cxx_std_20)
+
+
+target_include_directories(learning_cmake PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 
 #-------------------------------Variables-------------------------

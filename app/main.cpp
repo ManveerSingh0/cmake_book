@@ -1,9 +1,10 @@
 #include <iostream>
-// #include "second.cpp"
+#include "second.h"
 
 
 
 
 int main(){
-  std::cout << "Hello world" << std::endl; 
+  Player manveer;
+  manveer.print_hello();
 }
