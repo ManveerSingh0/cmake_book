@@ -3,11 +3,17 @@ Good Practice
 j
 1. instead of unset(variable) define it to empty string like this
     set(variable "")
+
+
+    cmake --system-information [file_name.txt] <-- this print out everything about cmake configuration 
+    YOU CAN SET COMPILER USING THIS COMMAND 
+    cmake -G "Unix Makefiles" -D CMAKE_CXX_COMPILER=gcc [location to cmaketxt file] .. 
+    use -T instead of -D if you want to change windows 10 compiler 
 ]==]
 
 
 
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.10)
 project(
   learning_cmake
   VERSION 1.0.0
@@ -50,7 +56,7 @@ message("$ENV{PATH}")
 # ${regex_var}\n ${to_lower}")
 
 set(my_list apple Banana apple2 Apple)
-list(SORT my_list COMPARE NATURAL CASE SENSITIVE ORDER ASCENDING)
+# list(SORT my_list COMPARE NATURAL CASE SENSITIVE ORDER ASCENDING)
 set(x 2)
 set(y 2)
 
@@ -92,6 +98,6 @@ endforeach()
 set(first_list x y)
 set(second_list first second)
 
-foreach(var IN ZIP_LISTS first_list second_list )
-  message("first one ${var_0} , second_one ${var_1}")
-endforeach()
+# foreach(var IN ZIP_LISTS first_list second_list )
+#   message("first one ${var_0} , second_one ${var_1}")
+# endforeach()
