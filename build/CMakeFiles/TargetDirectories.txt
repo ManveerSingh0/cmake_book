@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 /mnt/d/programming/cmake_book/build/CMakeFiles/rebuild_cache.dir
 /mnt/d/programming/cmake_book/build/CMakeFiles/edit_cache.dir
 /mnt/d/programming/cmake_book/build/app/CMakeFiles/rebuild_cache.dir
 /mnt/d/programming/cmake_book/build/app/CMakeFiles/edit_cache.dir
 /mnt/d/programming/cmake_book/build/app/CMakeFiles/learning_cmake.dir
+=======
+/home/genki/programming/learning_cmake/cmake_book/build/CMakeFiles/edit_cache.dir
+/home/genki/programming/learning_cmake/cmake_book/build/CMakeFiles/rebuild_cache.dir
+/home/genki/programming/learning_cmake/cmake_book/build/app/CMakeFiles/learning_cmake.dir
+/home/genki/programming/learning_cmake/cmake_book/build/app/CMakeFiles/edit_cache.dir
+/home/genki/programming/learning_cmake/cmake_book/build/app/CMakeFiles/rebuild_cache.dir
+>>>>>>> 62954721468db2e327557d04fb868a436c4bb04c
