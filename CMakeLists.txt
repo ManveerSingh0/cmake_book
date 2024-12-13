@@ -13,7 +13,7 @@ j
 
 
 
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.30)
 project(
   learning_cmake
   VERSION 1.0.0
@@ -30,8 +30,8 @@ target_include_directories(learning_cmake PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/in
 
 
 #-------------------------------Variables-------------------------
-set(CMAKE_CXX_STANDARD          20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# set(CMAKE_CXX_STANDARD          20)
+# set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # option(second_var_name "this will  enable nothing" ON)
 # set(my_var "Manveer Singh")
 # message([=[${my_var}
