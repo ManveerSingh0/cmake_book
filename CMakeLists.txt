@@ -9,6 +9,7 @@ j
     YOU CAN SET COMPILER USING THIS COMMAND 
     cmake -G "Unix Makefiles" -D CMAKE_CXX_COMPILER=gcc [location to cmaketxt file] .. 
     use -T instead of -D if you want to change windows 10 compiler 
+    cmake --build . --target [target_name]
 ]==]
 
 
@@ -21,12 +22,18 @@ project(
   LANGUAGES C CXX
 )
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
-add_subdirectory(app)
+set(CMAKE_CXX_STANDARD          26)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
+add_library(my_app_lib STATIC ${CMAKE_CURRENT_SOURCE_DIR}/src/second.cpp)
+target_include_directories(my_app_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_compile_features(my_app_lib PUBLIC cxx_std_20) # either set it up per target
+
+add_subdirectory(app)
 target_compile_features(learning_cmake PRIVATE cxx_std_20)
 
-
-target_include_directories(learning_cmake PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_link_libraries(learning_cmake PUBLIC my_app_lib)
 
 
 #-------------------------------Variables-------------------------
